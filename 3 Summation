@@ -1,0 +1,14 @@
+1. Upper Bound (Big-O): 
+Opt for a higher-degree polynomial, 
+such as cubic (g(n) = dn³+ en²+ fng), 
+which grows faster than the quadratic curve: g(n) dn³+ en² + fn+g If g(n) 
+serves as a tight upper bound, 
+it can be expressed using big-O notation: f(n) = O(n³)
+
+2. Lower Bound (Big-Omega): Select a lower-degree polynomial, 
+like linear (h(n) = kn+1),
+that grows slower than the quadratic curve: h(n)=kn+1 If h(n) acts as a tight lower bound, 
+it can be expressed using big-Omega notation: f(n) = (n)
+
+3. Tight Bound (Big-Theta): When both upper and lower bounds are closely aligned, 
+express the behavior using big-Theta notation: f(n) = (n²)
