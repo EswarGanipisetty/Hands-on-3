@@ -1,1 +1,28 @@
 
+To find the runtime of the given algorithm mathematically :
+
+       we have to count the number of iterations that the nested loop perform
+
+       lets denote the number of iterations of the inner loop as T(n):
+
+                T(n)=n*n
+
+                 T(n)=n^2
+
+The runtime of the algorithm, denoted as T(n)
+
+where n is the size of the input, can be represented as the sum of the time taken for each individual iteration. Since there are n^2 iterations due to the nested loops and each iteration takes constant time c, we have:
+
+T(n) = c * Σ(i=1 to n) Σ(j=1 to n) 1
+
+The inner summation represents the number of iterations performed by the inner loop for each iteration of the outer loop, which is simply n. Therefore, the expression simplifies to:
+
+T(n) = c*Σ(i=1 to n) n
+
+T(n) = c*n*Σ(i=1 to n) 1
+
+T(n) = c*n*n
+
+So, the runtime of the algorithm is quadratic with respect to the input size n, which is represented by the function T(n) = c * n^2.
+
+This means the runtime increases quadratically as the input size grows.
